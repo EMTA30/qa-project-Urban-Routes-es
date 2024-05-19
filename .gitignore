@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 .pytest/
 venv/
 .idea/
 .pytest_cache/
 __pycache__/
+=======
+.pytest/
+venv/
+.idea/
+.pytest_cache/
+__pycache__/
+>>>>>>> 6d906ec8fb7b75328c34593ae1e59f6aaa934e3e
