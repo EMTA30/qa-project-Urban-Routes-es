@@ -11,7 +11,7 @@ Este proyecto tiene como objetivo automatizar el flujo de pedir un taxi y comple
 - **XPATH Documentation**: Guía de estilo para la sintaxis de XPATH. [XPATH](https://www.w3schools.com/xml/xpath_intro.asp)
 - **CSS Documentation**: Guía de estilo para la sintaxis de CSS. [CSS Selector](https://saucelabs.com/resources/blog/selenium-tips-css-selectors)
 
-## Tecnologías y Técnicas Utilizadas
+## Tecnologías Utilizadas
 
 ### Python
 Python es un lenguaje de programación de alto nivel, interpretado y con una fuerte orientación a objetos. Es ampliamente apreciado por su sintaxis clara y legible, lo que facilita tanto el aprendizaje para los nuevos programadores como el desarrollo rápido de aplicaciones complejas para los más experimentados. Python es muy popular en la automatización de tareas, el análisis de datos, la inteligencia artificial, y el desarrollo web, entre otros campos.
@@ -21,6 +21,13 @@ PyCharm es un entorno de desarrollo integrado (IDE) utilizado en la programació
 
 ### Selenium
 Selenium es un conjunto de herramientas y bibliotecas de software utilizado principalmente para la automatización de pruebas en aplicaciones web. Uno de sus componentes es el WebDriver que proporciona una interfaz de programación para interactuar con los navegadores web de manera automatizada.
+
+### Técnicas utilizadas:
+- Automatización y control del navegador con Selenium WebDriver.
+- Uso de selectores avanzados para localizar elementos usando diferentes estrategias de localización como **By.ID, By.XPATH, By.CSS_SELECTOR**.
+- Sincronización de operaciones con WebDriverWait y expected_conditions.
+- Estructuración de pruebas automatizadas mediante **POM**.
+- Configuración y limpieza utilizando **setup_class** que establece el entorno de prueba inicial, configurando el WebDriver y **teardown_class** que asegura que el WebDriver se cierre correctamente al finalizar las pruebas.
 
 ## Comandos para Usar el Proyecto
 
