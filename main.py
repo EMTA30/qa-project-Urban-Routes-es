@@ -233,7 +233,7 @@ class TestUrbanRoutes:
         routes_page.click_close_payment_method_window()
 
         # send message to driver
-        msg = 'Traer palomitas para 2'
+        msg = data.message_for_driver
         routes_page.set_driver_msg(msg)
 
         # request handkerchief and blanket
