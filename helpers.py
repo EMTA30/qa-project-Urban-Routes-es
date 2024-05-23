@@ -4,6 +4,7 @@ from selenium.common import WebDriverException
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
+# CORRECCION: Creación del archivo helpers para agregar los metodos de apoyo
 
 def retrieve_phone_code(driver) -> str:
     """Este código devuelve un número de confirmación de teléfono y lo devuelve como un string.
@@ -27,7 +28,7 @@ def retrieve_phone_code(driver) -> str:
                         "Utiliza 'retrieve_phone_code' solo después de haber solicitado el código en tu aplicación.")
     return code
 
-
+# CORRECCION: Se agregaron los metodos de wait al archivo helpers
 def wait_for_load_page(driver, from_field):
     WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(from_field))
 

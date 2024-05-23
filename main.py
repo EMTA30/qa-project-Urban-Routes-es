@@ -5,7 +5,7 @@ from helpers import retrieve_phone_code
 from helpers import wait_for_load_page
 from helpers import wait_for_driver_arrival_message
 
-
+# CORRECCION: Se reorganizo el archivo main para tener solo los metodos de las pruebas
 class TestUrbanRoutes:
     driver = None
 
@@ -16,6 +16,7 @@ class TestUrbanRoutes:
         chrome_options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
         cls.driver = webdriver.Chrome(options=chrome_options)
 
+# CORRECCION: Se creo un metodo por cada prueba y se agrego un assertion para cada uno.
     def setup_method(self):
         self.driver.get(data.urban_routes_url)
         self.routes_page = UrbanRoutesPage(self.driver)
